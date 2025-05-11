@@ -348,16 +348,16 @@
             <div class="contact_form-container">
               <div>
                 <div>
-                  <input type="text" placeholder="Name">
+                  <input type="text" name="name" placeholder="Name" required>
                 </div>
                 <div>
-                  <input type="email" placeholder="Email">
+                  <input type="email" name="email" placeholder="Email" required>
                 </div>
                 <div>
-                  <input type="text" placeholder="Phone Number">
+                  <input type="text" name="phone" placeholder="Phone Number">
                 </div>
                 <div class="mt-5">
-                  <input type="text" placeholder="Message">
+                  <input type="text" name="message" placeholder="Message" required>
                 </div>
                 <div class="mt-5 d-flex justify-content-center justify-content-sm-start">
                   <button type="submit">
@@ -370,7 +370,6 @@
 
           </form>
         </div>
-        <p id="formMessage" style="display: none; color: green;">Message sent!</p>
         <div class="col-md-6">
           <div class="contact_img-box">
             <img src="images/tweet.png" alt="" style="width: 150px; height: auto; 
