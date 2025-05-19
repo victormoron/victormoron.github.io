@@ -477,7 +477,9 @@ a:focus {
 
 /* end info section */
 
-
+section[id] {
+  scroll-margin-top: 100px;
+}
 
 /* footer section*/
 
