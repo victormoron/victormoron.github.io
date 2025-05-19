@@ -77,8 +77,12 @@ h4 {
   font-family: 'Poppins', sans-serif;
 }
 
-.header_section {}
-
+.header_section {
+  position: sticky;
+  top: 0;
+  z-index: 1030; /* Ensure it stays above other elements */
+  background-color: #fff; /* Needed if your nav has transparency */
+}
 nav.navbar.navbar-expand-lg {}
 
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
