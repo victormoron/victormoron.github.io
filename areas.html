@@ -2,6 +2,17 @@
 <html>
 
 <head>
+  <style>
+  body {
+    padding-top: 90px; /* Adjust based on your navbar height */
+  }
+
+  .custom_nav-container {
+    background-color: white;
+    z-index: 1050;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* optional */
+  }
+</style>
   <!-- Basic -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -39,7 +50,7 @@
     <!-- header section strats -->
     <header class="header_section">
       <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <nav class="navbar navbar-expand-lg custom_nav-container fixed-top" style="background-color: white; z-index: 1050;" ">
           <a class="navbar-brand" href="index.html" style="font-size: 48px;">
             Victor Moron
           </a>
