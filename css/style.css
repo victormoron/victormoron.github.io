@@ -282,7 +282,7 @@ a:focus {
 }
 
 .practice_box:hover {
-  transform: translateY(-150px);
+  transform: translateY(-80px);
   cursor: pointer;
 }
 
