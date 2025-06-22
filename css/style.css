@@ -357,7 +357,7 @@ a:focus {
   background-image: url(../images/pen.png);
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   background-repeat: no-repeat;
   background-size: cover;
 }
