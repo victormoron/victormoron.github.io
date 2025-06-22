@@ -341,6 +341,11 @@ a:focus {
   margin-bottom: 35px;
 }
 
+.welcome_container {
+  margin-left: 40%; /* push content to the right of the image */
+  padding: 2rem;
+}
+
 .welcome_container h4 {
   font-weight: normal;
 }
