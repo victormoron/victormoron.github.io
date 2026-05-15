@@ -65,7 +65,7 @@ img { max-width: 100%; display: block; }
 }
 .brand-mark {
   width: 28px; height: 28px; border-radius: 8px;
-  background: var(--gradient); display: inline-block;
+  background: var(--gradient); display: none; /* hidden — change to inline-block to bring the mark back */
 }
 .nav-links {
   display: flex; gap: 32px; list-style: none; padding: 0; margin: 0;
