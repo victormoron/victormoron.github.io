@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Víctor Morón</title>
+  <meta name="description" content="Open to executive AI roles, fractional engagements, advisory, board work, and speaking. Let's talk." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html"><span class="brand-mark"></span>Víctor Morón</a>
+    <button class="menu-toggle" aria-label="Open menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="insights.html">Insights</a></li>
+      <li><a href="contact.html" class="nav-cta active">Get in touch →</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-info">
+          <div class="section-label">Contact</div>
+          <h2>Let's talk.</h2>
+          <p>I'm currently exploring executive AI/data leadership roles, a small number of fractional and advisory engagements, board appointments, and selective speaking. If any of that fits — drop me a line.</p>
+
+          <div class="open-to" style="margin-top: 0;">
+            <h4>What I'm open to</h4>
+            <div class="row">
+              <span class="item">Executive AI / data leadership</span>
+              <span class="item">Fractional Chief AI / Data Officer</span>
+              <span class="item">Responsible AI advisory</span>
+              <span class="item">Board &amp; non-exec</span>
+              <span class="item">Speaking</span>
+            </div>
+            <p>Based in London, working with teams globally.</p>
+          </div>
+
+          <div class="contact-meta">
+            <div class="contact-meta-item">
+              <span class="ico">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </span>
+              <a href="https://www.linkedin.com/in/victormoron/" target="_blank" rel="noopener">linkedin.com/in/victormoron</a>
+            </div>
+            <div class="contact-meta-item">
+              <span class="ico">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </span>
+              <a href="mailto:vmorontejero@gmail.com">vmorontejero@gmail.com</a>
+            </div>
+            <div class="contact-meta-item">
+              <span class="ico">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              </span>
+              <a href="https://medium.com/@vmorontejero" target="_blank" rel="noopener">Read on Medium</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" action="https://formsubmit.co/vmorontejero@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New message from your website" />
+          <input type="hidden" name="_captcha" value="true" />
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" required placeholder="Jane Doe" />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="jane@company.com" />
+          </div>
+          <div class="field">
+            <label for="kind">What's this about?</label>
+            <select id="kind" name="kind">
+              <option>Executive role</option>
+              <option>Fractional / Chief AI / Data Officer</option>
+              <option>Advisory engagement</option>
+              <option>Board / non-exec</option>
+              <option>Speaking</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="A few lines on what you're working on and what you're hoping to discuss..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Send message <span class="arrow">→</span></button>
+          <p style="font-size: 12px; color: var(--muted); margin: 0;">Submissions go directly to my inbox. No data is stored on this site.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-blurb">
+        <a class="brand" href="index.html" style="margin-bottom:16px;"><span class="brand-mark"></span>Víctor Morón</a>
+        <p>AI leadership at the intersection of science, scale, and responsibility.</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="insights.html">Insights</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Elsewhere</h4>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/victormoron/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://medium.com/@vmorontejero" target="_blank" rel="noopener">Medium</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Víctor Morón. All rights reserved.</span>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/victormoron/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.35-1.85 3.58 0 4.24 2.36 4.24 5.43v6.31zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        </a>
+        <a href="https://medium.com/@vmorontejero" target="_blank" rel="noopener" aria-label="Medium">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M2.85 6.7c.03-.27-.07-.55-.27-.74L.6 3.59v-.36h6.34l4.9 10.74L16.15 3.23H22.2v.36l-1.69 1.62a.5.5 0 0 0-.19.48v12.11a.5.5 0 0 0 .19.48l1.65 1.62v.36h-8.3v-.36l1.71-1.66c.17-.17.17-.22.17-.48V8.05L11.01 20.2h-.64L5.83 8.05v8.15c-.05.34.07.69.31.93l2.22 2.7v.36H2.06v-.36l2.22-2.7c.24-.24.34-.59.28-.93V6.7h.29z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
