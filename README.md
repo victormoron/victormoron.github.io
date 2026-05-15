@@ -77,11 +77,19 @@ You can reuse `victorpic.001.jpeg` from your existing repo at `victormoron.githu
 
 ## Contact form
 
-The contact form on `contact.html` posts to **FormSubmit** (https://formsubmit.co) — a free, no-backend email forwarding service. It's pointed at `vmorontejero@gmail.com`.
+The contact form on `contact.html` posts to **Web3Forms** (https://web3forms.com) — a free, no-backend form-to-email service. Submissions are forwarded to the email registered on the Web3Forms account.
 
-The **first time** anyone submits the form, FormSubmit will email you a confirmation link to activate the endpoint. Click it once, and from then on every submission will arrive in your inbox.
+### How it's wired up
 
-If you'd rather use a different service (Formspree, Netlify Forms, your own backend), just change the `action="..."` attribute on the `<form>` element in `contact.html`.
+The form uses an `access_key` (a public token tied to the Web3Forms account) rather than an email address in the URL. That means **the recipient email never appears in the page source** — Web3Forms keeps it on their side.
+
+Spam protection: a hidden `botcheck` honeypot field is included. Web3Forms ignores any submission that fills it in.
+
+### Switching services or changing the recipient
+
+- To change the recipient email, update the email on the Web3Forms account that owns this access_key.
+- To rotate the access_key, generate a new one in the Web3Forms dashboard and replace the `value="..."` on the `<input name="access_key">` in `contact.html`.
+- To switch to a different service (Formspree, FormSubmit, Netlify Forms, your own backend), change the `action="..."` attribute on the `<form>` element in `contact.html`.
 
 ## Local preview
 
